@@ -1,0 +1,73 @@
+{
+  "Name": "CalculaDólar",
+  "Version": "0.0.0.0",
+  "Author": "Wenoa Studio",
+  "Actions": [
+    {
+      "Name": "Dólar Oficial",
+      "UUID": "studio.wenoa.calculadolar.oficial",
+      "Icon": "imgs/actions/default",
+      "Tooltip": "Muestra la cotización del dólar oficial",
+      "Controllers": [
+        "Keypad"
+      ],
+      "States": [
+        {
+          "Image": "imgs/actions/empty"
+        }
+      ]
+    },
+    {
+      "Name": "Dólar Blue",
+      "UUID": "studio.wenoa.calculadolar.blue",
+      "Icon": "imgs/actions/default",
+      "Tooltip": "Muestra la cotización del dólar blue",
+      "Controllers": [
+        "Keypad"
+      ],
+      "States": [
+        {
+          "Image": "imgs/actions/empty"
+        }
+      ]
+    },
+    {
+      "Name": "Dólar Digital",
+      "UUID": "studio.wenoa.calculadolar.digital",
+      "Icon": "imgs/actions/default",
+      "Tooltip": "Muestra la cotización del dólar digital (MEP)",
+      "Controllers": [
+        "Keypad"
+      ],
+      "States": [
+        {
+          "Image": "imgs/actions/empty"
+        }
+      ]
+    }
+  ],
+  "Category": "CalculaDólar",
+  "CategoryIcon": "imgs/plugin/default-icon",
+  "CodePath": "bin/plugin.js",
+  "Description": "Acceso en tiempo real a los valores de las diferentes cotizaciones del Dólar en Argentina",
+  "Icon": "imgs/plugin/default-icon",
+  "SDKVersion": 3,
+  "Software": {
+    "MinimumVersion": "6.9"
+  },
+  "OS": [
+    {
+      "Platform": "mac",
+      "MinimumVersion": "12"
+    },
+    {
+      "Platform": "windows",
+      "MinimumVersion": "10"
+    }
+  ],
+  "Nodejs": {
+    "Version": "20",
+    "Debug": "enabled"
+  },
+  "UUID": "studio.wenoa.calculadolar"
+}

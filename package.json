@@ -1,0 +1,39 @@
+{
+  "name": "calculadolar-streamdeck",
+  "version": "0.0.0",
+  "description": "Plugin de Stream Deck para mostrar cotizaciones del peso argentino",
+  "author": "Wenoa Studio <https://wenoa.studio>",
+  "license": "Apache-2.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/wenoastudio/calculadolar-deck.git"
+  },
+  "scripts": {
+    "build": "rollup -c",
+    "watch": "rollup -c -w --watch.onEnd=\"streamdeck restart studio.wenoa.calculadolar\"",
+    "pack": "streamdeck pack studio.wenoa.calculadolar.sdPlugin",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:coverage": "vitest run --coverage"
+  },
+  "type": "module",
+  "devDependencies": {
+    "@elgato/cli": "^1.6.0",
+    "@rollup/plugin-commonjs": "^28.0.0",
+    "@rollup/plugin-node-resolve": "^15.2.2",
+    "@rollup/plugin-terser": "^0.4.4",
+    "@rollup/plugin-typescript": "^12.1.0",
+    "@tsconfig/node20": "^20.1.2",
+    "@types/node": "~20.19.0",
+    "@typescript-eslint/eslint-plugin": "^8.49.0",
+    "@vitest/coverage-v8": "^4.0.15",
+    "eslint": "^9.39.1",
+    "rollup": "^4.0.2",
+    "tslib": "^2.6.2",
+    "typescript": "^5.2.2",
+    "vitest": "^4.0.15"
+  },
+  "dependencies": {
+    "@elgato/streamdeck": "^2.0.0"
+  }
+}
