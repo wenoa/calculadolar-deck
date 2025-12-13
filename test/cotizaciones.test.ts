@@ -1,9 +1,9 @@
 import { afterEach, beforeEach, describe, expect, it, vi } from "vitest";
-import { Arbolito } from "../modelo/arbolito";
-import { CalculaDolar } from "../modelo/calculadolar";
+import { Arbolito } from "../src/modelo/arbolito";
+import { CalculaDolar } from "../src/modelo/calculadolar";
 import { TemporizadorDeMentira } from "./support/temporizador-de-mentira";
 import { FakeKeyAction } from "./support/fake-key-action";
-import { CotizacionBlue, CotizacionDigital, CotizacionOficial } from "../acciones/cotizaciones";
+import { CotizacionBlue, CotizacionDigital, CotizacionOficial } from "../src/acciones/cotizaciones";
 import { SingletonAction } from "@elgato/streamdeck";
 import { QuietLogger } from "./support/quiet-logger";
 

@@ -1,4 +1,4 @@
-import { Temporizador } from "../../modelo/temporizador";
+import { Temporizador } from "../../src/modelo/temporizador";
 
 export class TemporizadorDeMentira implements Temporizador {
   private callback?: () => Promise<void>;
