@@ -29,3 +29,56 @@ jobs:
         run: |
           npm run build
           npm run pack
+
+  lanzamiento:
+    name: 🚀 Lanzamiento
+    runs-on: ubuntu-latest
+    needs: test
+    if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - uses: fregante/setup-git-user@v2
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version-file: .node-version
+
+      - name: 🏷️ Configurar git-mkver
+        uses: cperezabo/setup-git-mkver@v1.2.0
+        with:
+          version: 1.3.0
+
+      - name: 📝 Actualizar versión en archivos
+        run: git-mkver patch
+
+      - name: 📦 Actualizar package-lock.json
+        run: npm install
+
+      - name: 🔢 Obtener versión
+        id: version
+        run: |
+          echo "version=$(git mkver next)" >> $GITHUB_OUTPUT
+
+      - name: 💾 Versionar cambios
+        run: |
+          git add .
+          git commit -m "chore: actualización de versión"
+          git mkver tag
+          git push && git push --tags
+
+      - name: 📦 Build final
+        run: |
+          npm run build
+          npm run pack
+
+      - name: 🚀 Crear GitHub Release
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: ${{ steps.version.outputs.version }}
+          name: ${{ steps.version.outputs.version }}
+          files: studio.wenoa.calculadolar.streamDeckPlugin
+          draft: false
+          prerelease: false
