@@ -1,0 +1,31 @@
+name: 🧪 Integración Continua
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  test:
+    name: 🧪 Prueba del plugin
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version-file: .node-version
+          cache: npm
+
+      - name: 📦 Instalar dependencias
+        run: npm ci
+
+      - name: 🎨 Ejecutar linter
+        run: npx eslint
+
+      - name: 🧪 Ejecutar tests con coverage
+        run: npm run test:coverage
+
+      - name: 📦 Empaquetar plugin (prueba de humo)
+        run: |
+          npm run build
+          npm run pack
