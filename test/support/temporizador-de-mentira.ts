@@ -16,8 +16,6 @@ export class TemporizadorDeMentira implements Temporizador {
   }
 
   async tick() {
-    if (this.callback) {
-      await this.callback();
-    }
+    await this.callback!();
   }
 }
