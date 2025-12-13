@@ -1,6 +1,6 @@
 {
   "name": "calculadolar-streamdeck",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Plugin de Stream Deck para mostrar cotizaciones del peso argentino",
   "author": "Wenoa Studio <https://wenoa.studio>",
   "license": "Apache-2.0",
