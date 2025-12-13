@@ -49,7 +49,7 @@
   "Category": "CalculaDólar",
   "CategoryIcon": "imgs/plugin/default-icon",
   "CodePath": "bin/plugin.js",
-  "Description": "Acceso en tiempo real a los valores de las diferentes cotizaciones del Dólar en Argentina",
+  "Description": "Acceso en tiempo real a los valores de las diferentes cotizaciones del dólar en Argentina",
   "Icon": "imgs/plugin/default-icon",
   "SDKVersion": 3,
   "Software": {
