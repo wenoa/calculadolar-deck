@@ -1,0 +1,17 @@
+{
+  "Name": "CalculaDólar",
+  "Description": "Real-time access to different Argentine peso to dollar exchange rates",
+  "Category": "CalculaDólar",
+  "studio.wenoa.calculadolar.oficial": {
+    "Name": "Official Dollar",
+    "Tooltip": "Shows the official dollar exchange rate"
+  },
+  "studio.wenoa.calculadolar.blue": {
+    "Name": "Blue Dollar",
+    "Tooltip": "Shows the blue dollar exchange rate"
+  },
+  "studio.wenoa.calculadolar.digital": {
+    "Name": "Digital Dollar",
+    "Tooltip": "Shows the digital dollar exchange rate (credit card purchases)"
+  }
+}

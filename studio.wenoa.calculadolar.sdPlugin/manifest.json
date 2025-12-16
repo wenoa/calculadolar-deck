@@ -35,7 +35,7 @@
       "Name": "Dólar Digital",
       "UUID": "studio.wenoa.calculadolar.digital",
       "Icon": "imgs/actions/default",
-      "Tooltip": "Muestra la cotización del dólar digital (MEP)",
+      "Tooltip": "Muestra la cotización del dólar digital (compras con tarjeta)",
       "Controllers": [
         "Keypad"
       ],
@@ -47,7 +47,7 @@
     }
   ],
   "Category": "CalculaDólar",
-  "CategoryIcon": "imgs/plugin/default-icon",
+  "CategoryIcon": "imgs/actions/default",
   "CodePath": "bin/plugin.js",
   "Description": "Acceso en tiempo real a los valores de las diferentes cotizaciones del dólar en Argentina",
   "Icon": "imgs/plugin/default-icon",
