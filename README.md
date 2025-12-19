@@ -13,9 +13,8 @@ Este plugin te permite:
 
 ### Desde el Marketplace de Elgato
 
-1. Ir al [Marketplace](https://marketplace.elgato.com).
-2. Buscar “CalculaDólar”.
-3. Seguir los pasos de instalación.
+1. Abrir [CalculaDólar en StreamDeck](https://marketplace.elgato.com/product/calculadolar-fbdcd484-3d5b-4114-b449-3cd1edeadd94).
+2. Seguir los pasos de instalación.
 
 ### Manualmente
 
